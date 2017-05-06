@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mapa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/animals.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+</head>
+
+<body style="background: transparent">
+  <div class="rel tamanho-rel-menu">
+    <div class="tamanho-menu">
+      <div class="menu">
+        <div class="item-menu">
+          <div class="logo-menu">
+            <img src="img/logo.svg" class="size-logo" alt="" />
+          </div>
+        </div>
+        <div class="item-menu menu-right">
+          <div class="pp dig-rel">
+            <div class="pa">
+              <a href="home.html"><img src="img/home.svg" class="" width="20" alt="Home" /></a>
+            </div>
+            <div class="pa">
+              <a href="mapa.html"><img src="img/mapa.svg" class="selecionado" width="20" alt="Mapa" /></a>
+            </div>
+            <div class="pa">
+              <a href="dashboard.html"><img src="img/pata.svg" class="esp" width="20" alt="Grupos, Ongs.." /></a>
+            </div>
+            <div class="pa">
+              <a href="#"><img src="img/talk.svg" id="conversas" width="20" alt="Conversas" /></a>
+            </div>
+            <div class="pa">
+              <a href="perfil.html"><img src="img/settings.svg"  id="settings" width="20" alt="Configuracoes" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--div class="local">
+    <div class="vcesta">
+      Vocė está em <span><strong>Maringá PR</strong></span>
+    </div>
+  </div-->
+  <div class="mapa-total">
+    <div class="mp filtro-mapa">
+      <div class="tamanho-filtro">
+        <div class="seia">
+          <div class="filtro-flex">
+            <div class="filtro-item">
+              <label for="nomeb">nome do bichinho</label>
+              <input type="text" id="nomeb" name="nomeb" value="" class="filtro-flex-inpt " placeholder="Digite o nome do bichinho">
+            </div>
+            <div class="filtro-item2">
+              <label for="nomeb">cidade</label>
+              <select class="filtro-flex-inpt ">
+                <option value="all" selected>TODOS</option>
+                <option value="maringa">Maringa</option>
+                <option value="maringa">Marialva</option>
+              </select>
+            </div>
+          </div>
+          <div class="filtro-flex">
+            <div class="filtro-item">
+              <label for="nomeb">ongs</label>
+              <select class="filtro-flex-inpt ">
+                <option value="all" selected>TODOS</option>
+                <option value="pessoa">Pessoa</option>
+                <option value="ong">ONG</option>
+              </select>
+            </div>
+            <div class="filtro-item">
+              <label for="nomeb">raça</label>
+              <select class="filtro-flex-inpt ">
+                <option value="all" selected>TODOS</option>
+                <option value="pitbull">Piitbull</option>
+              </select>
+            </div>
+            <div class="filtro-item">
+              <label for="nomeb">porte</label>
+              <select class="filtro-flex-inpt ">
+                <option value="all" selected>TODOS</option>
+                <option value="p">Pequeno</option>
+                <option value="m">Medio</option>
+                <option value="g">Grande</option>
+              </select>
+            </div>
+          </div>
+          <div class="filtro-flex">
+            <div class="filtro-item">
+              <label for="nomeb">SEXO</label>
+              <select class="filtro-flex-inpt ">
+                <option value="all" selected>TODOS</option>
+                <option value="macho">Macho</option>
+                <option value="femea">Femea</option>
+              </select>
+            </div>
+            <div class="filtro-item">
+              <label for="nomeb">idade</label>
+              <input type="range" name="points" min="0" max="10" class="filtro-flex-inpt ">
+            </div>
+            <div class="filtro-item">
+              <label for="nomeb">distancia</label>
+              <input type="range" name="points" min="0" max="10" class="filtro-flex-inpt ">
+            </div>
+            <div class="filtro-item">
+              <button type="button" name="button" class="btn-filtrar">FILTRAR</button>
+            </div>
+          </div>
+        </div>
+        <div class="conteudo">
+        <div class="filtroos">
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+          <div class="filtro-thumb">
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="mp mapa-mapa">
+      <div id="map"></div>
+    </div>
+  </div>
+  <script>
+    function initMap() {
+      var uluru = {
+        lat: -23.4209995,
+        lng: -51.9330558
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCekWLxGHE2uqanU4M0vQ4N0vYyiCYRds8&callback=initMap">
+  </script>
+
+</body>
+
+</html>

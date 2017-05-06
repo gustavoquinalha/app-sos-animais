@@ -1,0 +1,25 @@
+{
+  "name": "front-bichinhos",
+  "version": "1.0.0",
+  "description": "front do projeto bichinhos",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoquinalha/front-bichinhos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavoquinalha/front-bichinhos/issues"
+  },
+  "homepage": "https://github.com/gustavoquinalha/front-bichinhos#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uncss": "^1.0.6"
+  }
+}

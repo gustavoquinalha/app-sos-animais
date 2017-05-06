@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/animals.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+  <div class="rel tamanho-rel-menu">
+    <div class="tamanho-menu">
+      <div class="menu">
+        <div class="item-menu">
+          <div class="logo-menu">
+            <img src="img/logo.svg" class="size-logo" alt="" />
+          </div>
+        </div>
+        <div class="item-menu menu-right">
+          <div class="pp dig-rel">
+            <div class="pa">
+              <a href="home.html"><img src="img/home.svg" class="" width="20" alt="Home" /></a>
+            </div>
+            <div class="pa">
+              <a href="mapa.html"><img src="img/mapa.svg" width="20" alt="Mapa" /></a>
+            </div>
+            <div class="pa">
+              <a href="dashboard.html"><img src="img/pata.svg" class="selecionado esp" width="20" alt="Grupos, Ongs.." /></a>
+            </div>
+            <div class="pa">
+              <a href="#"><img src="img/talk.svg" id="conversas" width="20" alt="Conversas" /></a>
+            </div>
+            <div class="pa">
+              <a href="perfil.html"><img src="img/settings.svg" id="settings" width="20" alt="Configuracoes" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pesquisa ">
+    <div class="tamanho">
+      <div class="filtro-flex">
+        <div class="filtro-item">
+          <label for="nomeb">nome do bichinho</label>
+          <input type="text" id="nomeb" name="nomeb" value="" class="filtro-flex-inpt " placeholder="Digite o nome do bichinho">
+        </div>
+        <div class="filtro-item2">
+          <label for="nomeb">cidade</label>
+          <select class="filtro-flex-inpt ">
+            <option value="all" selected>TODOS</option>
+            <option value="maringa">Maringa</option>
+            <option value="maringa">Marialva</option>
+          </select>
+        </div>
+      </div>
+      <div class="filtro-flex">
+        <div class="filtro-item">
+          <label for="nomeb">ongs</label>
+          <select class="filtro-flex-inpt ">
+            <option value="all" selected>TODOS</option>
+            <option value="pessoa">Pessoa</option>
+            <option value="ong">ONG</option>
+          </select>
+        </div>
+        <div class="filtro-item">
+          <label for="nomeb">raça</label>
+          <select class="filtro-flex-inpt ">
+            <option value="all" selected>TODOS</option>
+            <option value="pitbull">Piitbull</option>
+          </select>
+        </div>
+        <div class="filtro-item">
+          <label for="nomeb">porte</label>
+          <select class="filtro-flex-inpt ">
+            <option value="all" selected>TODOS</option>
+            <option value="p">Pequeno</option>
+            <option value="m">Medio</option>
+            <option value="g">Grande</option>
+          </select>
+        </div>
+      </div>
+      <div class="filtro-flex">
+        <div class="filtro-item">
+          <label for="nomeb">SEXO</label>
+          <select class="filtro-flex-inpt ">
+            <option value="all" selected>TODOS</option>
+            <option value="macho">Macho</option>
+            <option value="femea">Femea</option>
+          </select>
+        </div>
+        <div class="filtro-item">
+          <label for="nomeb">idade</label>
+          <input type="range" name="points" min="0" max="10" class="filtro-flex-inpt ">
+        </div>
+        <div class="filtro-item">
+          <label for="nomeb">distancia</label>
+          <input type="range" name="points" min="0" max="10" class="filtro-flex-inpt ">
+        </div>
+        <div class="filtro-item">
+          <button type="button" name="button" class="btn-filtrar">FILTRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tamanho ess">
+    <!--div class="text">
+        <h2>Conheça alguns bichinhos</h2>
+      </div-->
+    <div class="conteudo">
+      <div class="bic">
+        <div class="bicc">
+          <div class="bp">
+            <div class="fotobp">
+              <div class="ff img-ong1">
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="flex1">
+              <h3>Vida Animal</h3>
+            </div>
+          </div>
+          <div class="bimg img-teste4">
+          </div>
+          <div class="dados-dog">
+            <div class="likedog">
+              <div class="flex1">
+                <h4 class="">Jozelito</h4>
+              </div>
+              <div class=""><img src="img/like.svg" width="15" alt=""></div>
+            </div>
+            <div class="opc">
+              <div class="opt">
+                <img src="img/big-bone.svg" width="13" alt=""> Vira-lata
+              </div>
+              <div class="opt">
+                <img src="img/macho.svg" width="13" alt=""> Macho
+              </div>
+              <div class="opt">
+                <img src="img/tamanho1.svg" width="13" alt=""> pequeno
+              </div>
+              <div class="opt">
+                <img src="img/calendar.svg" width="13" alt=""> 2 anos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bic">
+        <div class="bicc">
+          <div class="bp">
+            <div class="fotobp">
+              <div class="ff img-ong1">
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="flex1">
+              <h3>Vida Animal</h3>
+            </div>
+          </div>
+          <div class="bimg img-teste1">
+          </div>
+          <div class="dados-dog">
+            <div class="likedog">
+              <div class="flex1">
+                <h4 class="">Laylaa</h4>
+              </div>
+              <div class=""><img src="img/like.svg" width="15" alt=""></div>
+            </div>
+            <div class="opc">
+              <div class="opt">
+                <img src="img/big-bone.svg" width="13" alt=""> Vira-lata
+              </div>
+              <div class="opt">
+                <img src="img/femea.svg" width="13" alt=""> Femea
+              </div>
+              <div class="opt">
+                <img src="img/tamanho2.svg" width="13" alt=""> medio
+              </div>
+              <div class="opt">
+                <img src="img/calendar.svg" width="13" alt=""> 2 anos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bic">
+        <div class="bicc">
+          <div class="bp">
+            <div class="fotobp">
+              <div class="ff img-ong2">
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="flex1">
+              <h3>Amigo Bicho</h3>
+            </div>
+          </div>
+          <div class="bimg img-teste2">
+          </div>
+          <div class="dados-dog">
+            <div class="likedog">
+              <div class="flex1">
+                <h4 class="">Thor</h4>
+              </div>
+              <div class=""><img src="img/like.svg" width="15" alt=""></div>
+            </div>
+            <div class="opc">
+              <div class="opt">
+                <img src="img/big-bone.svg" width="13" alt=""> Vira-lata
+              </div>
+              <div class="opt">
+                <img src="img/macho.svg" width="13" alt=""> Femea
+              </div>
+              <div class="opt">
+                <img src="img/tamanho3.svg" width="13" alt=""> grande
+              </div>
+              <div class="opt">
+                <img src="img/calendar.svg" width="13" alt=""> 2 anos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bic">
+        <div class="bicc">
+          <div class="bp">
+            <div class="fotobp">
+              <div class="ff img-ong2">
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="flex1">
+              <h3>Amigo Bicho</h3>
+            </div>
+          </div>
+          <div class="bimg img-teste3">
+          </div>
+          <div class="dados-dog">
+            <div class="likedog">
+              <div class="flex1">
+                <h4 class="">Jozelito</h4>
+              </div>
+              <div class=""><img src="img/like.svg" width="15" alt=""></div>
+            </div>
+            <div class="opc">
+              <div class="opt">
+                <img src="img/big-bone.svg" width="13" alt=""> Vira-lata
+              </div>
+              <div class="opt">
+                <img src="img/femenine.svg" width="13" alt=""> Femea
+              </div>
+              <div class="opt">
+                <img src="img/femenine.svg" width="13" alt=""> grande
+              </div>
+              <div class="opt">
+                <img src="img/calendar.svg" width="13" alt=""> 2 anos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bic">
+        <div class="bicc">
+          <div class="bp">
+            <div class="fotobp">
+              <div class="ff img-ong1">
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="flex1">
+              <h3>Vida Animal</h3>
+            </div>
+          </div>
+          <div class="bimg img-teste1">
+          </div>
+          <div class="dados-dog">
+            <div class="likedog">
+              <div class="flex1">
+                <h4 class="">Jozelito</h4>
+              </div>
+              <div class=""><img src="img/like.svg" width="15" alt=""></div>
+            </div>
+            <div class="opc">
+              <div class="opt">
+                <img src="img/big-bone.svg" width="13" alt=""> Vira-lata
+              </div>
+              <div class="opt">
+                <img src="img/femenine.svg" width="13" alt=""> Femea
+              </div>
+              <div class="opt">
+                <img src="img/femenine.svg" width="13" alt=""> grande
+              </div>
+              <div class="opt">
+                <img src="img/calendar.svg" width="13" alt=""> 2 anos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bic">
+        <div class="bicc">
+          <div class="bp">
+            <div class="fotobp">
+              <div class="ff img-ong1">
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="flex1">
+              <h3>Vida Animal</h3>
+            </div>
+          </div>
+          <div class="bimg img-teste2">
+          </div>
+          <div class="dados-dog">
+            <div class="likedog">
+              <div class="flex1">
+                <h4 class="">Jozelito</h4>
+              </div>
+              <div class=""><img src="img/like.svg" width="15" alt=""></div>
+            </div>
+            <div class="opc">
+              <div class="opt">
+                <img src="img/big-bone.svg" width="13" alt=""> Vira-lata
+              </div>
+              <div class="opt">
+                <img src="img/femenine.svg" width="13" alt=""> Femea
+              </div>
+              <div class="opt">
+                <img src="img/femenine.svg" width="13" alt=""> grande
+              </div>
+              <div class="opt">
+                <img src="img/calendar.svg" width="13" alt=""> 2 anos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bic">
+        <div class="bicc">
+          <div class="bp">
+            <div class="fotobp">
+              <div class="ff img-ong2">
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="flex1">
+              <h3>Amigo Bicho</h3>
+            </div>
+          </div>
+          <div class="bimg img-teste3">
+          </div>
+          <div class="dados-dog">
+            <div class="likedog">
+              <div class="flex1">
+                <h4 class="">Jozelito</h4>
+              </div>
+              <div class=""><img src="img/like.svg" width="15" alt=""></div>
+            </div>
+            <div class="opc">
+              <div class="opt">
+                <img src="img/big-bone.svg" width="13" alt=""> Vira-lata
+              </div>
+              <div class="opt">
+                <img src="img/femenine.svg" width="13" alt=""> Femea
+              </div>
+              <div class="opt">
+                <img src="img/femenine.svg" width="13" alt=""> grande
+              </div>
+              <div class="opt">
+                <img src="img/calendar.svg" width="13" alt=""> 2 anos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bic">
+        <div class="bicc">
+          <div class="bp">
+            <div class="fotobp">
+              <div class="ff img-ong2">
+                <img src="" alt="" />
+              </div>
+            </div>
+            <div class="flex1">
+              <h3>Amigo Bicho</h3>
+            </div>
+          </div>
+          <div class="bimg img-teste4">
+          </div>
+          <div class="dados-dog">
+            <div class="likedog">
+              <div class="flex1">
+                <h4 class="">Jozelito</h4>
+              </div>
+              <div class=""><img src="img/like.svg" width="15" alt=""></div>
+            </div>
+            <div class="opc">
+              <div class="opt">
+                <img src="img/big-bone.svg" width="13" alt=""> Vira-lata
+              </div>
+              <div class="opt">
+                <img src="img/femenine.svg" width="13" alt=""> Femea
+              </div>
+              <div class="opt">
+                <img src="img/femenine.svg" width="13" alt=""> grande
+              </div>
+              <div class="opt">
+                <img src="img/calendar.svg" width="13" alt=""> 2 anos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="tamanho rodape">
+      <div class="rodape-item">
+        <img src="img/logo2.svg" width="120" alt="" />
+      </div>
+      <div class="rodape-item">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#">Pagina inicial</a></li>
+          <li><a href="#">Pesquisar</a></li>
+          <li><a href="#">Mapa</a></li>
+          <li><a href="#">Minha conta</a></li>
+        </ul>
+      </div>
+      <div class="rodape-item">
+        <h4>Sobre nós</h4>
+        <ul>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Sobre nos</a></li>
+          <li><a href="#">Ajude</a></li>
+          <li><a href="#">Equipe</a></li>
+        </ul>
+      </div>
+      <div class="rodape-item">
+        <h4>Redes sociais</h4>
+        <ul>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="direitos">
+      bichinhos.com.br - Todos os direitos reservados
+    </div>
+  </footer>
+</body>
+
+</html>
